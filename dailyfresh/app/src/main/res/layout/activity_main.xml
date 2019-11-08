@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/biaoti"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ed4255">
+            <TextView
+                android:text="Daily Fresh"
+                android:id="@+id/text_title"
+                android:textSize="21sp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/button_backward"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop ="7dp"
+                android:layout_marginLeft="12dp"
+                android:drawablePadding="6dp"
+                android:background="@drawable/ic_arrow_back_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button_list"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:drawablePadding="6dp"
+                android:background="@drawable/ic_list_dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_ViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_tab_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/main_tab_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"  >
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            style="@style/main_tab1"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_index"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/radio_shopcar"
+            android:drawableTop="@drawable/icon_shopcar"
+            style="@style/main_tab1"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/radio_sort"
+            android:drawableTop="@drawable/icon_sort"
+            style="@style/main_tab1"
+            android:text="壁纸" />
+
+        <RadioButton
+            android:id="@+id/radio_search"
+            android:drawableTop="@drawable/icon_search"
+            style="@style/main_tab1"
+            android:text="搜索" />
+
+        <RadioButton
+            android:id="@+id/radio_me"
+            android:drawableTop="@drawable/icon_me"
+            style="@style/main_tab1"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

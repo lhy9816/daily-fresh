@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#00ff00">
+
+            <com.example.lenovo.dailyfresh.fragment.SlideShowView
+                android:id="@+id/slideshowView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#E5E5E5" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fafafa"
+            android:columnCount="4"
+            android:rowCount="2">
+
+            <LinearLayout
+                android:id="@+id/ll_module1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/img_home1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="所有店铺"
+                    android:textColor="#929292"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/img_home2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="所有水果"
+                    android:textColor="#929292"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/img_home3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="用户自取"
+                    android:textColor="#929292"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_module4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/img_home6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="关于我们"
+                    android:textColor="#929292"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#E5E5E5" />
+
+        <LinearLayout
+            android:id="@+id/recommand"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="推荐商品"
+                android:textColor="#929292"
+                android:textSize="15sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#E5E5E5" />
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="63dp">
+                <!-- 定义一个ImageView，用于作为列表项的一部分。 -->
+                <ImageView
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:paddingLeft="10dp"
+                    android:background="@mipmap/lemon"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="#f0f"
+                        android:paddingLeft="10dp"
+                        android:text="柠檬"/>
+                    <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:paddingLeft="10dp"
+                        android:text="酸酸涩涩，是一种闲愁"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#E5E5E5" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="63dp">
+                <!-- 定义一个ImageView，用于作为列表项的一部分。 -->
+                <ImageView
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:paddingLeft="10dp"
+                    android:background="@mipmap/lizhi"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="#f0f"
+                        android:paddingLeft="10dp"
+                        android:text="荔枝"/>
+                    <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:paddingLeft="10dp"
+                        android:text="日啖荔枝三百颗"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#E5E5E5" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="63dp">
+                <!-- 定义一个ImageView，用于作为列表项的一部分。 -->
+                <ImageView
+                    android:layout_width="63dp"
+                    android:layout_height="63dp"
+                    android:paddingLeft="10dp"
+                    android:background="@mipmap/monkeypeach"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="#f0f"
+                        android:paddingLeft="10dp"
+                        android:text="猕猴桃"/>
+                    <!-- 定义一个TextView，用于作为列表项的一部分。 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19dp"
+                        android:paddingLeft="10dp"
+                        android:text="维C之王"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

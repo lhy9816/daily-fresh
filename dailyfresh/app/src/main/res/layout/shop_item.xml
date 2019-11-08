@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E5E5E5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="3dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv11"
+            android:width="50dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#E5E5E5" />
+
+        <TextView
+            android:id="@+id/tv21"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="13dp"
+            android:text="毛巾"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:background="#E5E5E5" />
+
+        <TextView
+            android:id="@+id/tv31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="233"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#91452d"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E5E5E5" />
+
+
+
+
+
+</LinearLayout>

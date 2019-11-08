@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:id="@+id/me_fragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="@drawable/me_background_1">
+
+
+        <com.lyp.settingbar.AvatarImageView
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="35dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/xiaoxin"
+            />
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.lyp.settingbar.SettingBar
+            app:leftText = "用户名"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.lyp.settingbar.SettingBar
+            app:leftText = "电话号码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.lyp.settingbar.SettingBar
+            app:leftText = "地址"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.lyp.settingbar.SettingBar
+            app:leftText = "交易记录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
